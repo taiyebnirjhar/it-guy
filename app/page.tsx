@@ -188,32 +188,39 @@ export default function Component() {
               name="message"
               rows={1}
               className="min-h-[48px] resize-none rounded-2xl border border-neutral-400 p-4 pr-16 shadow-sm"
-              defaultValue={""}
-            >
-              <div className="absolute right-3 top-3 flex size-8 items-center gap-2">
-                <Button size="icon">
-                  <PaperclipIcon className="mr-2 size-4" />
-                  Attach
-                </Button>
-                <Button size="icon">
-                  <UploadIcon className="mr-2 size-4" />
-                  Upload
-                </Button>
-                <Button size="icon">
-                  <SendIcon className="mr-2 size-4" />
-                  Send
-                </Button>
-              </div>
-            </Textarea>
+            />
+
             <Button
               type="submit"
               size="icon"
-              className="absolute right-3 top-3 size-8"
+              className="absolute right-3 top-2 size-4"
             >
               <SendIcon className="size-4" />
-              <span className="sr-only">Upload</span>
             </Button>
           </div>
+          {/* <div className="relative">
+            <Textarea
+              placeholder="Type your message..."
+              name="message"
+              rows={1}
+              className="min-h-[48px] resize-none rounded-2xl border border-neutral-400 p-4 pr-16 shadow-sm"
+            />
+            <div className="absolute right-3 top-3 flex size-8 items-center gap-2">
+              <Button size="icon">
+                <PaperclipIcon className="mr-2 size-4" />
+                Attach
+              </Button>
+              <Button size="icon">
+                <UploadIcon className="mr-2 size-4" />
+                Upload
+              </Button>
+              <Button size="icon">
+                <SendIcon className="mr-2 size-4" />
+                Send
+              </Button>
+            </div>
+          </div> */}
+
           <p className="text-center text-xs font-medium text-neutral-700">
             The Chatbot Playground is a beta feature. Use at your own risk.
           </p>
